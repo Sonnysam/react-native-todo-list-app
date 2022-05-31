@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, Text, View, FlatList, Alert } from "react-native";
 import Header from "./components/header";
 import TodoItem from "./components/todoItem";
+import AddTodo from "./components/addTodo";
 
 export default function App() {
   const [todos, setTodos] = useState([
@@ -14,11 +15,22 @@ export default function App() {
     setTodos((prevTodos) => {
       return prevTodos.filter((todo) => todo.key != key);
     });
+  };
+
+  const submitHandler = (text) => {
+    if (text.length > 3) {
+      setTodos((prevTodos) => {
+        return [{ text: text, key: Math.random().toString() }, ...prevTodos];
+      });
+    } else {
+      Alert.alert('Oops😬', "Enter a valid todo");
+    }
   }
 
   return (
     <View style={styles.container}>
       <Header />
+      <AddTodo submitHandler={submitHandler}/>
       <View style={styles.content}>
         {/* todo form */}
         <View style={styles.list}>
@@ -26,7 +38,7 @@ export default function App() {
             data={todos}
             renderItem={({ item }) => (
               // <Text style={styles.item}>{item.text}</Text>
-              <TodoItem item={item} pressHandler={ pressHandler }/>
+              <TodoItem item={item} pressHandler={pressHandler} />
             )}
           />
         </View>
