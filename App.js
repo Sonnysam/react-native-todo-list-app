@@ -37,6 +37,7 @@ export default function App() {
           <View style={styles.list}>
             <FlatList
               data={todos}
+              showsVerticalScrollIndicator={false}
               renderItem={({ item }) => (
                 // <Text style={styles.item}>{item.text}</Text>
                 <TodoItem item={item} pressHandler={pressHandler} />
@@ -56,9 +57,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   content: {
-    padding: 40,
+    padding: 35,
+    flex: 1,
   },
   list: {
-    marginTop: 20,
+    marginTop: 2,
+    flex: 1,
   },
 });

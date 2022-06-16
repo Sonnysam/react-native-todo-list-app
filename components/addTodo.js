@@ -15,7 +15,7 @@ export default function AddTodo({ submitHandler }) {
     <View>
       <TextInput
         style={styles.input}
-        placeholder="Add Todo"
+        placeholder="Add Todo or tap on the bin to delete"
         onChangeText={changeHandler}
       />
       {/* <Button title="Add Todo" color={"rgb(96, 176, 244)"} onPress={() => submitHandler(text)} style={styles.btn}/> */}
@@ -33,21 +33,20 @@ const styles = StyleSheet.create({
     marginTop: 30,
     paddingVertical: 10,
     borderBottomWidth: 2,
-    borderBottomColor: "#ddd",
-    fontSize: 17,
+    borderBottomColor: "black",
+    fontSize: 14,
     marginHorizontal: 12,
     fontWeight: "bold",
   },
   btn: {
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 4,
-    marginHorizontal: 12,
-    elevation: 10,    backgroundColor: "rgb(96, 176, 244)",
-    paddingVertical: 10,
-    marginHorizontal: 100,
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    borderRadius: 33.33,
+    elevation: 10,
+    backgroundColor: "rgb(96, 176, 244)",
+    marginHorizontal: 135,
   },
   btnText: {
     fontSize: 16,
