@@ -3,7 +3,7 @@
     "name": "Sonny-todo-app",
     "slug": "sonny-todo-app",
     "version": "1.0.2",
-    ""
+    "privacy": "public",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
