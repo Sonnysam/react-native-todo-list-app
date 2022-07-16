@@ -2,13 +2,14 @@
   "expo": {
     "name": "Sonny-todo-app",
     "slug": "sonny-todo-app",
-    "version": "1.0.0",
+    "version": "1.0.2",
+    ""
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/todo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
