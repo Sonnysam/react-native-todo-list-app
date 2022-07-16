@@ -22,14 +22,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/images/todo.png",
+        "backgroundColor": "#000"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/todo.png"
     },
-    "description": "A simple Todo App built with react native and expo",
+    "description": "A Todo App built with react native and expo",
     "githubUrl": "https://github.com/Sonnysam/react-native-todo-list-app"
   }
 }
