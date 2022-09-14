@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Sonny-todo-app",
-    "slug": "sonny-todo-app",
-    "version": "1.0.2",
+    "name": "sonnydo",
+    "slug": "sonnydo",
+    "version": "1.0.0",
     "privacy": "public",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/todo.png",
     "splash": {
       "image": "./assets/images/todo.png",
       "resizeMode": "contain",
@@ -21,6 +21,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.sonnysam.sonnytodoApp",
+      "version":1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/todo.png",
         "backgroundColor": "#000"
